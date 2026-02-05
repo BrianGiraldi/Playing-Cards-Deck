@@ -5,12 +5,6 @@ This project demonstrates layout control, alignment techniques, and component-ba
 
 ---
 
-## 🔗 Live Demo
-👉 (Optional but recommended)  
-httpsyour-username.github.ioplaying-cards
-
----
-
 ## 🎯 Project Overview
 
 The goal of this project is to render a deck-style layout of playing cards while applying precise Flexbox alignment rules at multiple levels of the layout.
