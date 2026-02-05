@@ -1,0 +1,122 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 24px;
+    }
+
+    /* Tests: must be flex, centered, wrap, gap 20px */
+    #playing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Tests: card must have width & height and use flex space-between */
+    .card {
+      width: 220px;
+      height: 320px;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Tests: align-self values */
+    .left {
+      align-self: flex-start;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.1;
+      color: #0f172a;
+    }
+
+    /* Tests: middle must be flex with column + align-self center */
+    .middle {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      color: #0f172a;
+    }
+
+    .right {
+      align-self: flex-end;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.1;
+      color: #0f172a;
+      transform: rotate(180deg);
+    }
+
+    /* Optional: make red suits look red (style only) */
+    .red, .red * {
+      color: #b91c1c;
+    }
+  </style>
+</head>
+
+<body>
+  <main id="playing-cards">
+    <div class="card">
+      <div class="left">A<br>♠</div>
+      <div class="middle">
+        <div>♠</div>
+        <div>♠</div>
+        <div>♠</div>
+      </div>
+      <div class="right">A<br>♠</div>
+    </div>
+
+    <div class="card red">
+      <div class="left">K<br>♥</div>
+      <div class="middle">
+        <div>♥</div>
+        <div>♥</div>
+        <div>♥</div>
+      </div>
+      <div class="right">K<br>♥</div>
+    </div>
+
+    <div class="card red">
+      <div class="left">7<br>♦</div>
+      <div class="middle">
+        <div>♦</div>
+        <div>♦</div>
+        <div>♦</div>
+      </div>
+      <div class="right">7<br>♦</div>
+    </div>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+
